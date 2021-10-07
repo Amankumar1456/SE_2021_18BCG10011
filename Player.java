@@ -12,15 +12,23 @@ public class Player {
     void setname(String name)
     {
         PlayerName=name;
-        setPawnsName();
+        setPawns();
     }
-    void setPawnsName()
+    void setPawn(String PawnName,String op)
     {
+
+    }
+    void setPawns()
+    {
+        System.out.println("enter pawns name seperated by ,");
+        String[] str=sc.nextLine().split(",");
         for(int i=0;i<gridManager.getSize();i++)
         {
-            String temp=sc.nextLine();
+            String temp=str[i];
             pawns[i].setName(temp);
-            
+            pawns[i].setI(0);
+            pawns[i].setJ(i);
+            gridManager.updateGrid(temp,0,i);
         }
     }
     public boolean validateMove(String inp)

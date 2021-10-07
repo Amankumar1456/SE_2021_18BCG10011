@@ -11,13 +11,10 @@ class GameManager
     
     private  void start()
     {
-        
-         
+ 
         GridManager gridManger=new GridManager();
         PlayerManager pm=new PlayerManager(gridManger);
-        
-
-
+ 
         boolean toggle=true;
         EndGame=false;
         while(!EndGame)
