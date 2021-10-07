@@ -6,6 +6,17 @@ public class GridManager
     {
         int[][] grid=new int[size][size];
     }
-    void updateGrid(int)
+    public boolean checkMove()
+    {
+        
+    }
+    public int getSize()
+    {
+        return size;
+    }
+    void updateGrid()
+    {
+
+    }
     
 }

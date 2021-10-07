@@ -8,6 +8,7 @@ class GameManager
         GameManager gameManager = new GameManager();
         gameManager.start();
     }
+    
     private  void start()
     {
         
@@ -15,6 +16,8 @@ class GameManager
         GridManager gridManger=new GridManager();
         PlayerManager pm=new PlayerManager(gridManger);
         
+
+
         boolean toggle=true;
         EndGame=false;
         while(!EndGame)
